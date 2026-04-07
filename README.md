@@ -32,9 +32,9 @@ Para ignorar el archivo ignorar.txt, se crea el archivo .gitignore y dentro se e
 
 ## Análisis del código misterioso
 El programa toma un número y le hace varias operaciones 
--Primero invierte el número  (452 → 254)
--después lo divide por 2  (254 → 127)
--final suma sus dígitos al resultado y lo suma con el numero ingreso (1+2+7=10) (10+127=137)
+- Primero invierte el número  (452 → 254)
+- después lo divide por 2  (254 → 127)
+- final suma sus dígitos al resultado y lo suma con el numero ingreso (1+2+7=10) (10+127=137)
 
 ## Cambios de nombres
 Cambiamos los nombres para que sean más claros y fáciles de entender:
