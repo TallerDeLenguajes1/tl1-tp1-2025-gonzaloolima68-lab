@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void f_alpha(int *p) {
+void invertir_numero(int *p) {
     int temp = *p;
     int rev = 0;
     while (temp > 0) {
@@ -10,11 +10,11 @@ void f_alpha(int *p) {
     *p = rev;
 }
 
-void f_beta(int *p) {
+void dividir_en_dos(int *p) {
     *p = *p / 2;
 }
 
-void f_gamma(int *p) {
+void suma_digitos(int *p) {
     int temp = *p;
     int suma = 0;
     while (temp > 0) {
@@ -24,22 +24,22 @@ void f_gamma(int *p) {
     *p = *p + suma;
 }
 
-void procesar_enigma(int *valor_referencia) {
-    f_alpha(valor_referencia);
-    f_beta(valor_referencia);
-    f_gamma(valor_referencia);
+void proceso(int *valor_referencia) {
+    invertir_numero(valor_referencia);
+    dividir_en_dos(valor_referencia);
+    suma_digitos(valor_referencia);
 }
 
 int main() {
-    int dato_secreto = 452;
+    int num = 452;
     
-    printf("Iniciando depuracion con el valor: %d\n", dato_secreto);
+    printf("Iniciando depuracion con el valor: %d\n", num);
     
     // Instrucción para el alumno: 
     // Pon un breakpoint aquí (F9) y usa F11 (Step Into) para entrar a cada función.
-    procesar_enigma(&dato_secreto);
+    proceso(&num);
     
-    printf("Resultado final del enigma: %d\n", dato_secreto);
+    printf("Resultado final del enigma: %d\n", num);
     
     return 0;
 }
